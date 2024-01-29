@@ -787,6 +787,9 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
+  header .logo {
+    width: 230px;
+  }
   .img-header {
     height: 50vh;
   }
@@ -799,8 +802,18 @@ footer img {
   }
 
   .contato-header {
-    gap: 15px;
+    gap: 5px;
     padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide-eventos .evento {
+    width: 260px;
+  }
+  .slide-eventos .evento h3 {
+    font-size: 17px;
   }
 
   .contato-header img {
@@ -823,6 +836,7 @@ footer img {
   .left-sobre {
     width: 100%;
     font-size: 15px;
+    order: 2;
   }
 
   .right-sobre {
@@ -838,7 +852,8 @@ footer img {
   }
 
   .sobre-instalacoes img {
-    width: 65px;
+    width: 50px;
+    margin-top: 10px;
   }
 
   .sobre-instalacoes h3 {
@@ -872,21 +887,18 @@ footer img {
 
   .contact {
     padding: 0px;
-}
+  }
 
   form {
     width: 95%;
   }
-
-
-
 
   .container.content-footer {
     padding: 40px 10px;
   }
 
   .copyright h4 {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   footer p,
