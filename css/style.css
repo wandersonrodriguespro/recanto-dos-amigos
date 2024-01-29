@@ -61,16 +61,39 @@ header .logo {
   width: 250px;
 }
 
-.nav ul {
+nav ul {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
 
-.nav ul li a {
+#menu a {
   color: var(--cor01);
   font-weight: 600;
   font-size: 18px;
+  position: relative;
+}
+
+#menu a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: var(--cor01);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#menu a:hover::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: var(--cor01);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: 0.5s ease-in-out;
 }
 
 /* Menu mobile */
@@ -627,15 +650,15 @@ footer img {
 @media screen and (max-width: 1280px) {
   .img-header p {
     max-width: 80%;
-}
+  }
 }
 
 @media screen and (max-width: 1070px) {
-  .nav ul {
+  nav ul {
     gap: 18px;
   }
 
-  .nav ul li a {
+  nav ul li a {
     font-size: 17px;
   }
 
@@ -643,7 +666,6 @@ footer img {
     width: 200px;
   }
 }
-
 
 @media screen and (max-width: 900px) {
   header .container {
@@ -659,24 +681,22 @@ footer img {
     display: block;
     width: 20px;
     border-top: 2px solid;
-    
   }
 
-  
-
-  #hamburger::after, #hamburger::before {
-    content: '';
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
     display: block;
     width: 20px;
     height: 2px;
     background: currentColor;
     margin-top: 5px;
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
   }
 
   #nav.active #hamburger {
-    border-top-color: transparent ;
+    border-top-color: transparent;
   }
 
   #nav.active #hamburger::before {
@@ -704,7 +724,11 @@ footer img {
     z-index: 10;
   }
 
-  #menu a li {
+  nav ul li {
+    margin-bottom: 15px;
+  }
+
+  nav li a {
     color: var(--textwhite);
     margin-bottom: 20px;
     font-size: 20px;
@@ -764,14 +788,6 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-  /* header {
-    position: fixed;
-    top: -5px;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
-  } */
-
   .img-header {
     height: 50vh;
   }
