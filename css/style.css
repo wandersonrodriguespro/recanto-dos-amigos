@@ -793,6 +793,7 @@ footer img {
   }
   .img-header p {
     font-size: 18px;
+    margin-top: 40px;
   }
   .popup-img img {
     width: 90%;
@@ -833,6 +834,10 @@ footer img {
     padding: 40px 10px;
   }
 
+  .sobre-instalacoes {
+    gap: 10px;
+  }
+
   .sobre-instalacoes img {
     width: 65px;
   }
@@ -843,7 +848,7 @@ footer img {
 
   .sobre-instalacoes p {
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .section-eventos {
@@ -866,9 +871,16 @@ footer img {
     padding: 40px 0;
   }
 
+  .contact {
+    padding: 0px;
+}
+
   form {
     width: 95%;
   }
+
+
+
 
   .container.content-footer {
     padding: 40px 10px;
