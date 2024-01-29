@@ -724,14 +724,13 @@ footer img {
     z-index: 10;
   }
 
-  nav ul li {
+  #menu li {
     margin-bottom: 15px;
   }
 
-  nav li a {
+  #menu li a {
     color: var(--textwhite);
-    margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
   }
 
