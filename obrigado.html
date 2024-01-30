@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Chacara Recanto Dos Amigos</title>
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -31,20 +31,44 @@
     </header>
 
     <main>
-      <div class="img-header">
+      <div class="img-header header-pagina-obrigado">
         <div class="bg-header"></div>
         <p>
-          Obrigado! 🌟 <br>Sua mensagem é muito importante.<br> Em breve, entraremos em contato.<br>Se surgir algo urgente, não hesite em nos chamar pelo WhatsApp.<br>Até breve!
+          Obrigado! 🌟 <br />Sua mensagem é muito importante.<br />
+          Em breve, entraremos em contato.<br />Se surgir algo urgente, não
+          hesite em nos chamar pelo WhatsApp.<br />Até breve!
         </p>
 
-        <a class="btn-whats-obrigado" href="https://wa.me/5511991310628" target="_blank">
+        <a
+          class="btn-whats-obrigado"
+          href="https://wa.me/5511991310628"
+          target="_blank"
+        >
           <img src="img/icon-withe-whatsapp.svg" alt="" />
           Chame No WhatsApp</a
         >
-        
-
       </div>
+
+      <a href="https://wa.me/5511991310628" target="_blank">
+        <div class="btn-whatsapp pulse">
+          <img src="img/icon-withe-whatsapp.svg" alt="" />
+        </div>
+      </a>
     </main>
-    <script src="js/scripts.js"></script>
+
+    <script>
+      // menu mobile
+
+const btnMobile = document.getElementById('btn-mobile')
+
+function toggleMenu() {
+  const nav = document.getElementById('nav')
+
+  nav.classList.toggle('active')
+  console.log('clicou')
+}
+
+btnMobile.addEventListener('click', toggleMenu)
+    </script>
   </body>
 </html>
