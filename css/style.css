@@ -133,7 +133,7 @@ nav ul {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #000000;
+  background-color: #000000ad;
   opacity: 0.6;
 }
 
@@ -143,7 +143,7 @@ nav ul {
   text-align: center;
   font-size: 30px;
   color: var(--textwhite);
-  text-shadow: 0 0 10px #000000;
+  text-shadow: 0 0 1px #000000;
 }
 
 .container {
@@ -215,12 +215,14 @@ nav ul {
   transition: 0.6s;
 }
 
-.left-sobre a:hover, .btn-whats-obrigado:hover {
+.left-sobre a:hover,
+.btn-whats-obrigado:hover {
   opacity: 0.9;
   scale: 1.1;
 }
 
-.left-sobre a:active, .btn-whats-obrigado:active {
+.left-sobre a:active,
+.btn-whats-obrigado:active {
   opacity: 0.7;
   scale: 1;
 }
@@ -618,8 +620,8 @@ footer img {
 
 .img-header.header-pagina-obrigado {
   height: 100vh;
+  padding: 10px;
 }
-
 
 .btn-whats-obrigado {
   display: flex;
@@ -633,7 +635,6 @@ footer img {
   transition: 0.6s;
   z-index: 2;
 }
-
 
 .btn-whats-obrigado img {
   width: 25px;
@@ -717,10 +718,10 @@ footer img {
     padding: 40px 10px;
   }
 
-  footer p, footer a {
+  footer p,
+  footer a {
     font-size: 13px;
-}
-  
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -805,6 +806,7 @@ footer img {
 
   .img-header.header-pagina-obrigado p {
     max-width: 100%;
+    padding: 10px;
   }
 
   .contato-header {
@@ -860,7 +862,6 @@ footer img {
     margin-top: 40px;
   }
 
-  
   .popup-img img {
     width: 90%;
   }
