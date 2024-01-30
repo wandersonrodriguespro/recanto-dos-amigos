@@ -806,7 +806,7 @@ footer img {
 
   .img-header.header-pagina-obrigado p {
     max-width: 100%;
-    padding: 10px;
+    line-height: 35px;
   }
 
   .contato-header {
@@ -860,6 +860,9 @@ footer img {
   .img-header p {
     font-size: 18px;
     margin-top: 40px;
+  }
+  .img-header.header-pagina-obrigado p {
+    line-height: 24px;
   }
 
   .popup-img img {
