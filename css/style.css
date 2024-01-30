@@ -199,6 +199,10 @@ nav ul {
   color: var(--cor01);
 }
 
+.left-sobre a img {
+  width: 25px;
+}
+
 .left-sobre a {
   display: flex;
   justify-content: center;
@@ -210,16 +214,13 @@ nav ul {
   background-color: var(--colorgreen);
   transition: 0.6s;
 }
-.left-sobre a img {
-  width: 25px;
-}
 
-.left-sobre a:hover {
+.left-sobre a:hover, .btn-whats-obrigado:hover {
   opacity: 0.9;
   scale: 1.1;
 }
 
-.left-sobre a:active {
+.left-sobre a:active, .btn-whats-obrigado:active {
   opacity: 0.7;
   scale: 1;
 }
@@ -611,6 +612,30 @@ footer img {
 
 .pulse {
   animation: animate-pulse 3s linear infinite;
+}
+
+/* Página de Obrigado */
+
+.btn-whats-obrigado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: var(--textwhite);
+  background-color: var(--colorgreen);
+  transition: 0.6s;
+  z-index: 50;
+}
+
+
+.btn-whats-obrigado img {
+  width: 25px;
+}
+
+.btn-whats-obrigado {
+  font-size: 14px;
 }
 
 /* Keyframe Botão WhatsApp */
